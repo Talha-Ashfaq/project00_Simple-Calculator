@@ -4,9 +4,9 @@
 import inquirer from "inquirer";
 
 const answer = await inquirer.prompt([
-  { message: "Enter first number", type: "number", name: "firstNumber" },
+  { message: "Enter your first number", type: "number", name: "firstNumber" },
   {
-    message: "Enter second number",
+    message: "Enter your second number",
     type: "number",
     name: "secondNumber",
   },
@@ -36,3 +36,5 @@ console.log("Your value is" , answer.firstNumber * answer.secondNumber);
 else {
     console.log("Pleasse select valid oparator");
 }
+
+console.log("Thank you.Feel free to use my calculator");
